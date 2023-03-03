@@ -49,9 +49,9 @@
               </ion-item>
 
               <div class="ion-padding" *ngIf="editMode" mode="md">
-                <ion-item fill="outline" *ngFor="let consulta of consultas | async">
+                <ion-item fill="outline">
                   <ion-label position="floating">Nome</ion-label>
-                  <ion-input [(ngModel)]="consulta.nome" name="nome" type="text" placeholder="Digite o novo nome"></ion-input>
+                  <ion-input name="nome" type="text" placeholder="Digite o novo nome"></ion-input>
                 </ion-item>
               
                 <ion-item fill="outline">
@@ -63,6 +63,8 @@
                   <ion-label position="floating">Valor</ion-label>
                   <ion-input name="valor" type="number" placeholder="Digite o novo valor"></ion-input>
                 </ion-item>
+
+                <ion-button>Salvar Dados</ion-button>
               </div>
             </ion-list>
           </ion-content>

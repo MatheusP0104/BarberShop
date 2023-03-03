@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  FormGroup,
+  FormGroupDirective,
+  FormControl,
+  Validators,
+} from '@angular/forms'
+import { ActivatedRoute } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { Observable } from 'rxjs';
 import { Servicos } from 'src/app/models/servicos';
-
 import { ServicesService } from 'src/app/service/service.service';
-
 
 @Component({
   selector: 'app-tela-cabelo',
@@ -14,6 +19,7 @@ import { ServicesService } from 'src/app/service/service.service';
 export class TelaCabeloPage implements OnInit {
   public consultas : Observable<Servicos[]>
   isModalOpen = false;
+  public servicos : Servicos
   public editMode = false
   mensagens: string[] = [];
   
@@ -21,6 +27,7 @@ export class TelaCabeloPage implements OnInit {
     private enviardados: AlertController, 
     private alerta: AlertController,
     private service:ServicesService,
+    private activatedRoute: ActivatedRoute
     ) {
       this.consultas = this.service.getServicos()
     }
@@ -32,11 +39,12 @@ export class TelaCabeloPage implements OnInit {
     pegarMensagem(msg) {
      this.mensagens.unshift(msg)
     }
-  
-    handleChange() {
-      this.pegarMensagem(this.service.getServicos());
-    
+
+    handleChange(index: Servicos){
+      this.pegarMensagem(index.id);
       
+      console.log(index.id)
+    
       switch (this.editMode){
         case false:
           this.editMode = true;
@@ -125,7 +133,24 @@ export class TelaCabeloPage implements OnInit {
     await alert.present();
   }
 
+  Update(dados : any){
+    let updateServicos : Servicos = {id: this.servicos.id, ...dados };
+    this.service.updateServico(updateServicos)
+  }
+
   ngOnInit() :void{
+    const id = this.activatedRoute.snapshot.paramMap.get('id');
+    this.service.getIdServicos(id!).subscribe({
+      next: (data : Servicos) =>{
+        if(!data){
+          console.log('sus error')
+        }
+        else{
+          this.servicos = data
+        }
+      }
+    })
+
    
   }
 

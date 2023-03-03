@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { collection, collectionData, doc, Firestore, setDoc} from '@angular/fire/firestore';
+import { collection, collectionData, doc, docSnapshots, Firestore, setDoc} from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { User } from 'src/app/models/cadastro';
 import { map } from 'rxjs/operators'
@@ -10,8 +10,7 @@ import { Servicos } from '../models/servicos';
   providedIn: 'root'
 })
 export class ServicesService {
-  valor: string
-  
+ 
   constructor(
     private firestore: Firestore) {}
 
@@ -42,10 +41,23 @@ export class ServicesService {
     );
   }
 
-  getServicoByIndex(index: number): Observable<Servicos> {
-    return this.getServicos().pipe(
-      map(servicos => servicos[index.valueOf()])
-    );
+  getIdServicos(id : string){
+    const document = doc(this.firestore, `data/${id}`);
+    return docSnapshots(document).pipe(
+      map((doc) => {
+        const id = doc.id;
+        const data = doc.data();
+        return {id, ...data} as Servicos
+      })
+    )
+  }
+
+  updateServico(servicos : Servicos){
+    const document = doc(this.firestore, 'Servicos', servicos?.id);
+    const {id, ...data} = servicos
+    return setDoc(document, data)
+
+
   }
 
   }
