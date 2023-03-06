@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { collection, collectionData, doc, docSnapshots, Firestore, setDoc} from '@angular/fire/firestore';
+import { collection, collectionData, doc, docSnapshots, Firestore, setDoc,  deleteDoc} from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { User } from 'src/app/models/cadastro';
 import { map } from 'rxjs/operators'
@@ -26,7 +26,6 @@ export class ServicesService {
     return setDoc(document, data);    
   }
 
-  // Read
   getContacts(): Observable<User[]> {
     const contactsCollection = collection(this.firestore, 'Admin');
     return collectionData(contactsCollection, {idField: 'id'}).pipe(
@@ -41,10 +40,10 @@ export class ServicesService {
     );
   }
 
-  getIdServicos(id : string){
-    const document = doc(this.firestore, `data/${id}`);
+  getIdServicos(id : string): Observable<Servicos>{
+    const document = doc(this.firestore, `Servicos/${id}`);
     return docSnapshots(document).pipe(
-      map((doc) => {
+      map(doc => {
         const id = doc.id;
         const data = doc.data();
         return {id, ...data} as Servicos
@@ -52,12 +51,16 @@ export class ServicesService {
     )
   }
 
-  updateServico(servicos : Servicos){
+  updateServico(servicos : Servicos): Promise<void> {
     const document = doc(this.firestore, 'Servicos', servicos?.id);
     const {id, ...data} = servicos
     return setDoc(document, data)
+  }
 
-
+  delete(id: string): Promise<void> {
+    const document = doc(this.firestore, 'Servicos', id)
+    console.log(document);
+    return deleteDoc(document)
   }
 
   }
