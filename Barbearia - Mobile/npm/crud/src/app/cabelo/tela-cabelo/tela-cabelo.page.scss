@@ -1,0 +1,110 @@
+.body{
+    --ion-background-color: #fff;
+}
+
+.logo{
+    position: relative;
+    margin-top: 10px;
+    left: 8em;
+    width: 55px;
+    height: 55px;
+}
+
+.voltar{
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 85px;
+    height: 82px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.title img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.title ion-label{
+    font-size: 25px;
+    font-family: 'Inika';
+    font-weight: 600;
+}
+
+h3{
+    font-family: 'Inika';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.itens{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom: #000 2px solid;
+}
+
+.field{
+    width: 100%;
+}
+
+.itens h5{
+    font-family: 'Inika';
+    font-weight: 600;
+}
+
+.itens ion-note{
+    font-family: 'Inika';
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.buttonEdit{
+    position: absolute;
+    width: 77px;
+    height: 33px;
+    left: 13.8rem;
+    top: 0.5rem;
+
+    color: #000;
+
+    border: 2px solid #000000;
+    border-radius: 30px;
+}
+
+.buttonAdd{
+    position: absolute;
+    width: 77px;
+    height: 33px;
+    left: 0.3rem;
+    top: 0.5rem;
+
+    color: #000;
+
+    border: 2px solid #000000;
+    border-radius: 30px;
+
+}
+
+.Titulo_Servico{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: 6%;
+}
+
+.ion-padding ion-item{
+    margin-bottom: 20px;
+}

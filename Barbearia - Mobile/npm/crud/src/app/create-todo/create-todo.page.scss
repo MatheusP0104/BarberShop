@@ -1,0 +1,258 @@
+.body{
+    --ion-background-color:#323131;
+}
+
+.container{
+    position: absolute;
+    width: 282px;
+    height: 530px;
+    left: 19px;
+    top: 40px;
+    background: #D9D9D9;
+    border-radius: 30px;
+    
+    
+}
+
+.seta{
+    cursor: pointer;
+}
+
+#voltar{
+    position: relative;
+    right: 20px;
+}
+//nome
+#lines1{
+    position: absolute;
+    width: 216px;
+    left: 35px;
+    top: 120px;
+    border: 1px solid #000000;  
+}
+
+#nome{
+    position: absolute;
+    width: 56px;
+    height: 30px;
+    left: 115px;
+    top: 40px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#input_name{
+    position: absolute;
+    width: 195px;
+    height: 0px;
+    left: 60px;
+    top: 105px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#img_user{
+    position: absolute;
+    left: 35px;
+    top: 95px;
+
+}
+
+//email
+#lines2{
+    position: absolute;
+    width: 216px;
+    left: 35px;
+    top: 230px;
+    border: 1px solid #000000;  
+}
+
+#email{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 110px;
+    top: 140px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#input_email{
+    position: absolute;
+    width: 195px;
+    height: 0px;
+    left: 70px;
+    top: 215px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#img_email{
+    position: absolute;
+    left: 35px;
+    top: 203px;
+
+}
+
+//Telefone
+#lines3{
+    position: absolute;
+    width: 216px;
+    left: 35px;
+    top: 345px;
+    border: 1px solid #000000;  
+}
+
+#telefone{
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    left: 105px;
+    top: 250px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#input_telefone{
+    position: absolute;
+    width: 195px;
+    height: 0px;
+    left: 65px;
+    top: 332px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#img_telefone{
+    position: absolute;
+    left: 35px;
+    top: 320px;
+}
+
+//Senha
+#lines4{
+    position: absolute;
+    width: 216px;
+    left: 35px;
+    top: 450px;
+    border: 1px solid #000000;  
+}
+
+#senha{
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    left: 115px;
+    top: 360px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#input_senha{
+    position: absolute;
+    width: 195px;
+    height: 0px;
+    left: 60px;
+    top: 435px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#img_senha{
+    position: absolute;
+    left: 35px;
+    top: 425px;
+}
+
+ion-checkbox {
+    --size: 32px;
+    --background: #D9D9D9;
+    position: absolute;
+    left: 220px;
+    top: 420px;
+    opacity: 0;
+
+  }
+
+ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid ;
+}
+
+#olho{
+    position:absolute;
+    left: 222px;
+    top: 425px;
+}
+
+//BT_Confirma
+#botao{
+    box-sizing: border-box;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    position: absolute;
+    width: 215px;
+    height: 69px;
+    left: 34px;
+    top: 550px;
+    background: #323131;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+}
+
+// Validação
+.valid_name{
+    position: relative;
+    top: 55px;
+    left: 15px;
+    font-family: 'Inika';
+
+}
+
+.valid_email{
+    position: fixed;
+    top: 265px;
+    left: 35px;
+    font-family: 'Inika';
+}
+
+.valid_tel{
+    position: fixed;
+    top: 380px;
+    left: 35px;
+    font-family: 'Inika';
+}
+
+.valid_senha{
+    position: fixed;
+    top: 485px;
+    left: 35px;
+    font-family: 'Inika';
+
+}

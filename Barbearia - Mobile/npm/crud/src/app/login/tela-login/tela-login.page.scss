@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Teko:wght@700&display=swap');
+
+.fundo{
+    position: relative;
+    --ion-background-color:#323131;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-left: 18px;
+    margin-top: 20px;
+    width: 282px;
+    height: 327px;
+    background: #D9D9D9;
+    border-radius: 30px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    
+}
+
+// User
+#usuario{
+    margin-top: 30px;
+    
+}
+
+#input_user{
+    position: absolute;
+    width: 190px;
+    left: 80px; 
+    top: 273px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#img_user{
+    position: absolute;
+    left: 53px; 
+    top: 292px;
+
+}
+
+#lines1{
+    position: absolute;
+    width: 216px;
+    left: 53px;
+    top: 315px;
+    border: 1px solid #000000;  
+}
+
+// Senha
+#senha{
+    position: absolute;
+    top: 370px;
+}
+
+#img_senha{
+    position: absolute;
+    left: 53px; 
+    top: 422px;
+}
+
+#olho_aberto{
+    position: absolute;
+    left: 240px; 
+    top: 420px;
+}
+
+ion-checkbox {
+    --size: 22px;
+    --background: #D9D9D9;
+    position: absolute;
+    left: 242px; 
+    top: 421px;
+    opacity: 0;
+
+}
+
+ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid ;
+}
+
+#input_senha{
+    position: absolute;
+    left: 80px; 
+    top: 403px;
+    width: 170px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 39px;
+
+}
+
+#lines2{
+    position: absolute;
+    width: 216px;
+    left: 53px;
+    top: 445px;
+    border: 1px solid #000000;  
+}
+
+// confirmar
+#botao{
+    box-sizing: border-box;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    position: absolute;
+    width: 215px;
+    height: 69px;
+    left: 50px;
+    top: 580px;
+    background: #323131;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+}
+
+// voltar
+.voltar{
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 95px;
+    height: 82px;
+}
+
+#img_voltar{
+    width: 150%;
+    height: 100%;
+}

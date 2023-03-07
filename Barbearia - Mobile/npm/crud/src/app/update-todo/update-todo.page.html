@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>update-todo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body">
+  <div class="ion-padding">
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="ion-padding"  mode="md">
+      <ion-item fill="outline">
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input formControlName="nome" id="nome" type="text" placeholder="Digite o novo nome"></ion-input>
+      </ion-item>
+    
+      <ion-item fill="outline">
+        <ion-label position="floating">Descrição</ion-label>
+        <ion-input  formControlName="descricao" id="descricao" type="text" placeholder="Digite a nova descrição"></ion-input>
+      </ion-item>
+    
+      <ion-item fill="outline">
+        <ion-label position="floating">Valor</ion-label>
+        <ion-input formControlName="valor" id="valor" type="number" placeholder="Digite o novo valor"></ion-input>
+      </ion-item>
+
+      <ion-button type="submit" expand="block" shape="">Salvar Dados</ion-button>
+      <ion-button color="danger" (click)="remove(consulta.id)">Deletar Dados</ion-button>
+    </div>
+  </form>
+</div>
+</ion-content>

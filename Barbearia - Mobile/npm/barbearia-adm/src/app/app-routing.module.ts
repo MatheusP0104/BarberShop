@@ -49,7 +49,7 @@ const routes: Routes = [
     loadChildren: () => import('./concluido/concluido.module').then( m => m.ConcluidoPageModule)
   },
   {
-    path: 'tela-cabelo/:id',
+    path: 'tela-cabelo',
     loadChildren: () => import('./cabelo/tela-cabelo/tela-cabelo.module').then( m => m.TelaCabeloPageModule)
   },
   {

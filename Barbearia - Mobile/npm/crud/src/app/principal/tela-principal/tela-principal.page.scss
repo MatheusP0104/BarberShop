@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css?family=Inika:700");
+
+.body{
+    position: relative;
+    --ion-background-color: #fff;
+}
+
+.logo{
+    position: relative;
+    margin-top: 10px;
+    left: 5rem;
+    width: 65px;
+    height: 65px;
+}
+
+.buscar{
+    position: relative;
+    bottom: 0.9rem;
+    left: 9.5rem;
+    width: 43px;
+    height: 34px;
+}
+
+
+ion-menu{
+    --ion-background-color: #fff;
+}
+
+#menu{
+    color: black;
+
+    height: 50px;
+}
+
+.bemVindo{
+    position: absolute;
+    width: 249px;
+    height: 78px;
+    left: 20px;
+    top: 20px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 39px;
+}
+
+.userP{
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    left: 230px;
+    top: 20px;
+}
+
+.select{
+    position: relative;
+    top: 60px;
+}
+
+.select ion-item{
+    font-family: 'Inika';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.lines1{
+    position: absolute;
+    width: 280px;
+    height: 0px;
+    left: 17px;
+    top: 110px;
+    border: 1px solid #000000;
+}
+
+.servicos{
+    position: absolute;
+    width: 236px;
+    height: 42px;
+    left: 75px;
+    top: 130px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 42px;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 50vh;
+    top: 12rem;
+    left: 0rem;
+    column-gap: 20px;
+    
+}
+
+.quadro1,.quadro2,.quadro3,.quadro4,.quadro5,.quadro6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 85px;
+    background: #D9D9D9;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#text1,#text2,#text3,#text4,#text5,#text6{
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+#servicos{
+    width: 60px;
+    height: 60px;
+}
+
+.tela-de-usuario{
+
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    height: 844px;
+    width: 390px;
+
+}
+
+.hidden, 
+.hidden * {
+
+    pointer-events: none;
+    visibility: hidden;
+
+}
+
+.overlap_group1{
+
+    height: 56px;
+    margin-left: 0.01px;
+    margin-top: 30px;
+    position: relative ;
+    width: 356px;
+
+}
+
+.overlap_group{
+
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 28px;
+    width:356px;
+
+}
+
+.line-10{
+
+    height: 3px;    
+    left: 0;
+    position: absolute;
+    top: 25px;
+    width: 356px;
+}
+
+.mail-2{
+
+    height: 26px;
+    left: 326px;
+    position: absolute;
+    top: 0;
+    width: 26px;
+    
+}
+
+.email{
+
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    
+}
+
+.flex-row-1{
+
+    align-items: flex-start;
+    display: flex;
+    gap:232px;
+    height: 49px;
+    margin-right:6px ;
+    margin-top:29px;
+    min-width:350px;
+}
+
+.title{
+
+    letter-spacing: 0;
+    line-height: normal ;
+    min-height: 42px;
+    min-width: 97px;
+}
+
+.person-4{
+
+
+    align-self: flex-end;
+    height: 21px;
+    width: 21px;
+
+}
+
+.flex-row-3{
+
+    align-items: flex-start;
+    display: flex;
+    gap: 195px;
+    height: 49px;
+    margin-right: 7.75px;
+    margin-top: 29px;
+    min-width: 348px;
+}
+
+.vector{
+
+    align-self: flex-end;
+    height: 19px;
+    width: 19px;
+}
+
+.telefone{
+
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 42px;
+    min-width: 134px;
+}
+
+.line{
+
+    height: 3px;
+    margin-left: 0.01px;
+    margin-top: 4px;
+    width: 356px;
+
+}
+
+.flex-row-2{
+
+    align-items: flex-start;
+    display: flex;
+    height: 49px;
+    margin-right: 7px;
+    margin-top: 29px;
+    min-width: 349px;
+
+}
+
+.lock-closed-3{
+
+    align-self: flex-end;
+    height: 20px;
+    width: 20px;
+
+}
+
+.senha{
+
+    letter-spacing: 0;
+    line-height: normal;
+    min-width: 42px;
+    min-width: 100px;
+
+}
+
+.flex-row{
+
+    align-items: flex-start;
+    align-self: flex-start;
+    display: flex;
+    height: 166px;
+    min-width: 380px;
+
+}
+
+.voltar-1-1{
+
+    height: 53px;
+    object-fit: cover;
+    width: 66px;
+
+}
+
+.person-circle-2{
+
+    align-self: flex-end;
+    height: 115px;
+    margin-left: 68px;
+    width: 115px;
+
+}
+
+.setting-2{
+
+    height: 36px;
+    margin-left: 18px;
+    margin-top: 8px;
+    object-fit: cover;
+    width: 36px;
+
+}
+
+.editing-1{
+
+    height: 36px;
+    margin-left: 41px;
+    margin-top: 8px;
+    object-fit: cover;
+    width: 36px;
+
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+ion-icon{
+    margin-right: 10px;
+}
+
+.linha{
+    margin-left: 20px;
+}
+

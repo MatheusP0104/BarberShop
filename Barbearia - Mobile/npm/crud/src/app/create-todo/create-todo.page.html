@@ -1,0 +1,67 @@
+<ion-content class="body" mode="ios">
+  <div class="container">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <img src="assets/imagens/voltar.png" alt="seta_voltar" routerLink="/home" class="seta">
+
+    <ion-label id="nome">Nome</ion-label>
+    <img id="img_user" src="assets/imagens/user.png" alt="Usuário">
+    <ion-input type="text" formControlName="nome" id="input_name"></ion-input>
+
+<div *ngIf="editMode">
+  <ion-item color="--ion-background-color:#323131;" class="valid_name" lines="none" *ngIf="userForm.get('nome').errors?.required || userForm.get('nome').errors?.minLength(3) || userForm.get('nome').errors?.maxLength(50) || userForm.get('nome').errors?.pattern('[a-zA-Z]*')"> 
+    <ion-text color="danger">
+      Nome Inválido
+    </ion-text>
+  </ion-item>
+</div>
+    <div id="lines1"></div>
+    
+    
+    <ion-label id="email">E-mail</ion-label>
+    <img id="img_email" src="assets/imagens/email.png" alt="Email"> 
+    <ion-input id="input_email" formControlName="email" type="email"></ion-input>
+  
+    <div *ngIf="editMode">
+      <ion-item color="--ion-background-color:#323131;" lines="none" class="valid_email" *ngIf="(userForm.get('email').errors?.required || userForm.get('email').errors?.email && userSignUp.submitted)">
+        <ion-text color="danger">
+          Email Inválido
+        </ion-text>
+      </ion-item>
+    </div>
+    <div id="lines2"></div>
+    
+    
+    <ion-label id="telefone">Telefone</ion-label>
+    <img id="img_telefone" src="assets/imagens/telefone.png" alt="Telefone">
+    <ion-input id="input_telefone" formControlName="telefone" simpleMask="(99)99999-9999"></ion-input>
+    
+    <div *ngIf="editMode">
+      <ion-item color="--ion-background-color:#323131;" lines="none" class="valid_tel" *ngIf="(userForm.get('telefone').errors?.required || userForm.get('telefone').errors?.minLength(14) && userSignUp.submitted)">
+        <ion-text color="danger">
+          Número Inválido
+        </ion-text>
+      </ion-item>
+    </div>
+      <div id="lines3"></div>
+    
+    <ion-label id="senha">Senha</ion-label>
+    <img id="img_senha" src="assets/imagens/senha.png" alt="Cadeado">
+    
+    <ion-input id="input_senha" formControlName="senha" type="password"></ion-input>
+    
+    <img src="assets/imagens/olho_aberto.png" alt="olho" id="olho">
+    <ion-checkbox></ion-checkbox>
+    
+    <div *ngIf="editMode">
+      <ion-item color="--ion-background-color:#323131;" lines="none" class="valid_senha" *ngIf="(userForm.get('senha').errors?.required || userForm.get('senha').errors?.minLength(8) || userForm.get('senha').errors?.maxLength(16) && userSignUp.submitted)">
+        <ion-text color="danger">
+          Senha Inválida
+        </ion-text>
+      </ion-item>
+    </div>
+    <div id="lines4"></div>
+    
+    <ion-button mode="ios" id="botao" color="--ion-background-color:#323131;" type="submit">Confirmar</ion-button>
+  </form> 
+</div>
+</ion-content>
