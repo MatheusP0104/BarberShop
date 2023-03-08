@@ -24,7 +24,7 @@ export class TelaCabeloPage implements OnInit {
     public formBuilder : FormBuilder
   ) { 
     this.id = this.activateRouter.snapshot.paramMap.get('id')
-    this.service.getTask(this.id).subscribe((data) => {
+    this.service.getIdServicos(this.id).subscribe((data) => {
       this.editForm = this.formBuilder.group({
         nome: [data['nome']],
         email: [data['email']],

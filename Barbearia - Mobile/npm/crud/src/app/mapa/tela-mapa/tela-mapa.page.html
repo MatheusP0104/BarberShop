@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button class="voltar" (click)="removeMap()" color="--ion-background-color:#323131;" routerLink="/tela-principal">
+      <img id="img_voltar" src="assets/imagens/voltar.png" alt="">
+    </ion-button>
+    <img class="logo" src="assets/imagens/logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngIf="!editMode">
+    <div class="test">
+      <!-- <ion-button class="buttonEdit" (click)="edit()" color="--ion-background-color:#323131;">Editar</ion-button> -->
+      <ion-icon name="location-outline"></ion-icon>
+      <ion-label>Localização</ion-label>
+    </div>
+    <div class="map" id="mapId"></div>
+    <ion-button class="buttonRota" (click)="rota()" color="--ion-background-color:#323131;">Rota</ion-button>
+  </div>
+
+  <div *ngIf="editMode">
+    <div class="test2">
+      <ion-button class="buttonEdit" (click)="edit()" color="--ion-background-color:#323131;">Editar</ion-button>
+      
+      <ion-item>
+        <ion-label>Latitue</ion-label>
+        <ion-input  [(ngModel)]="lat" color="secondary"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Longitude</ion-label>
+        <ion-input [(ngModel)]="long" color="tertiary"></ion-input>
+      </ion-item>
+
+      <div class="map" id="mapId"></div>
+
+      <ion-button class="buttonSave" (click)="ionViewDidEnter()" color="--ion-background-color:#323131;">Salvar</ion-button>
+    </div>
+  </div>
+
+</ion-content>

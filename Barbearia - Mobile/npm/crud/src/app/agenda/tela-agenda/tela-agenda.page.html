@@ -1,0 +1,206 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button mode="ios" class="voltar" color="--ion-background-color:#323131;" routerLink="/tela-principal" (click)="tela()">
+      <img id="img_voltar" src="assets/imagens/voltar.png" alt="">
+    </ion-button>
+    <img class="logo" src="assets/imagens/logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<!-- Tela do Calendario -->
+<ion-content class="body" mode="ios">
+  <div *ngIf="editMode == 1">
+    <div class="title">
+        <h3><b>AGENDAMENTO</b></h3>
+        <div class="line"></div>
+    </div>
+
+    <div class="calendario">
+      <ion-datetime locale="pt-br" minuteValues="0,30" hourValues="8,9,10,15,16,17">
+        <span slot="time-label">Selecione o Horário:</span>
+      </ion-datetime>
+      <div class="line"></div>
+    </div>
+
+    <div class="agendar">
+      <ion-button color=" --ion-background-color: #fff;" (click)="edit()">Confirmar</ion-button>
+    </div>
+  </div>
+
+  <!-- Tela escolhendo cortes/produtos -->
+  <div *ngIf="editMode == 2">
+
+      <div class="title">
+        <h3><b>AGENDAMENTO</b></h3>
+        <div class="line"></div>
+      </div>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>Lucas Carvalho De Souza
+        {{nome}}
+      </ion-label>
+
+    </ion-item>
+    <label class="lobelid" >#00385</label>
+      <ion-list>
+        <h1 class="Titonlo">Cabelo</h1>
+        <ion-item>
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Selecione o Cabelo">
+            <ion-select-option value="Corte Undercut">Corte Undercut</ion-select-option>
+            <ion-select-option value="Corte Militar">Corte Militar</ion-select-option>
+            <ion-select-option value="Corte Pompadour">Corte Pompadour</ion-select-option>
+            <ion-select-option value="Corte Mullet Style">Corte Mullet Style</ion-select-option>
+            <ion-select-option value="Corte Desfiado">Corte Desfiado</ion-select-option>
+            <ion-select-option value="Corte Disfarçado">Corte Disfarçado</ion-select-option>
+            <ion-select-option value="Corte Razor Part">Corte Razor Part</ion-select-option>
+            <ion-select-option value="Corte Asa Delta">Corte Asa Delta</ion-select-option>
+            <ion-select-option value="Corte Baixo">Corte Baixo</ion-select-option>
+            <ion-select-option value="Corte Social">Corte Social</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <h1 class="Titonlo">Barba</h1>
+        <ion-item>
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Selecione a Barba">
+            <ion-select-option value="Barba Tradiconal">Barba Tradiconal</ion-select-option>
+            <ion-select-option value="Cavanhaque">Cavanhaque</ion-select-option>
+            <ion-select-option value="Barba Arredondada">Barba Arredondada</ion-select-option>
+            <ion-select-option value="Barba Degradê">Barba Degradê</ion-select-option>
+            <ion-select-option value="Van Dyke">Van Dyke</ion-select-option>
+            <ion-select-option value="Barba Encaixada">Barba Encaixada</ion-select-option>
+            <ion-select-option value="Balbo">Balbo</ion-select-option>
+            <ion-select-option value="Barba Lenhador">Barba Lenhador</ion-select-option>
+            <ion-select-option value="Bigode Original">Bigode Original</ion-select-option>
+            <ion-select-option value="Costeletas Evidentes">Costeletas Evidentes</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <h1 class="Titonlo">Tintura</h1>
+
+        <ion-item>
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Selecione a Tintura">
+            <ion-select-option value="Tintura Permanente">Tintura Permanente</ion-select-option>
+            <ion-select-option value="Tintura Temporária">Tintura Temporária</ion-select-option>
+            <ion-select-option value="Tonalizante">Tonalizante</ion-select-option>
+            <ion-select-option value="Shampoo Colorante">Shampoo Colorante</ion-select-option>
+            <ion-select-option value="Henna">Henna</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <h1 class="Titonlo">Depilação</h1>
+
+        <ion-item>
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Selecione a Depilação">
+            <ion-select-option value="Depilação c/ Cera">Depilação c/ Cera</ion-select-option>
+            <ion-select-option value="Depilação c/ Pinça">Depilação c/ Pinça</ion-select-option>
+            <ion-select-option value="Depilação c/ Lâmina">Depilação c/ Lâmina</ion-select-option>
+            <ion-select-option value="Depilação c/ Creme">Depilação c/ Creme</ion-select-option>
+            <ion-select-option value="Depilação c/ Linha">Depilação c/ Linha</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <h1 class="Titonlo" >Hidratação</h1>
+
+        <ion-item>
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Selecione a Hidratação">
+            <ion-select-option value="Hidrat. Profunda">Hidrat. Profunda</ion-select-option>
+            <ion-select-option value="Hidrat. c/ Queratina">Hidrat. c/ Queratina</ion-select-option>
+            <ion-select-option value="Hidrat. c/ Cauterização">Hidrat. c/ Cauterização</ion-select-option>
+            <ion-select-option value="Hidrat. c/ Óleos">Hidrat. c/ Óleos</ion-select-option>
+            <ion-select-option value="Hidrat. c/ Silicone">Hidrat. c/ Silicone</ion-select-option>
+            <ion-select-option value="Plástica de fios">Plástica de fios</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <div class="pagamento">
+        <h5>Opções de Pagamento</h5>
+
+        <ion-item>
+          <ion-label lines="none" (click)="pix()" >Gerar Pix</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label lines="none" (click)="local()" >Pagar no Local</ion-label>
+        </ion-item>
+      </div>
+  </div>
+
+  <!-- Tela Pagamento Pix -->
+  <div *ngIf="editMode == 3">
+    <div class="logoBarber">
+      <img class="studio" src="assets/imagens/Studio Haircut 1.png" alt="">
+      <img class="pix" src="assets/imagens/logo_pix.png" alt="">
+    </div>
+
+    <div class="linhas">
+      <div class="line"></div>
+    </div>
+
+    <div class="content">
+      <h1>Código do Pix gerado!</h1>
+
+      <p>Use os dados abaixo para concluir o seu pagamento:</p>
+
+      <img class="qrcode" src="assets/imagens/qrcode-pix.png" alt="">
+      <h6>00020126450014BR.GOV.BCB.PIX0123studiohaircut@gmail.com5204000053039865802BR5925Studio HairCut BarberShop6012Pouso Alegre62070503***63041D65</h6>
+
+      <ion-button class="finalizar" color=" --ion-background-color: #fff;" (click)="edit()">Finalizar Pedido</ion-button>
+    </div>
+  </div>
+
+  <!-- Pagamento no local -->
+  <div *ngIf="editMode == 4">
+    <div class="logoBarber">
+      <img class="studio" src="assets/imagens/Studio Haircut 1.png" alt="">
+      <img class="pix" src="assets/imagens/logo_pix.png" alt="">
+    </div>
+
+    <div class="linhas">
+      <div class="line"></div>
+    </div>
+
+    <div class="content">
+      <h1>Din Din!</h1>
+
+      <p>Use os dados abaixo para concluir o seu pagamento:</p>
+
+      <div class="valor">
+        <ion-label class="texto_valorTotal">Valor Total: </ion-label>
+        <ion-label class="texto_real">R$ VALOR</ion-label>
+      </div>
+
+      <ion-list class="troco">
+        <h3>Troco: </h3>
+        <ion-item>
+          <ion-select interface="popover" placeholder='Precisa de "Troco"'>
+            <ion-select-option value="cinquenta">R$ 50</ion-select-option>
+            <ion-select-option value="cem">R$ 100</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-item class="check">
+        <ion-checkbox slot="start" class="sem_troco"></ion-checkbox>
+        <ion-label>Não precisa de troco</ion-label>
+      </ion-item>
+      
+
+      <ion-button class="finalizar" color=" --ion-background-color: #fff;" (click)="edit()">Finalizar Pedido</ion-button>
+    </div>
+  </div>
+
+  <!-- Tela Pagamento Concluido -->
+  <div *ngIf="editMode == 5">
+    <div class="container">
+      <img class="confirma" src="assets/imagens/confirma.png">
+    </div>
+
+    <div class="title_3">
+      <H1 class="text">Agendamento <br> Concluído!!!</H1>
+    </div>
+  </div>
+
+</ion-content>

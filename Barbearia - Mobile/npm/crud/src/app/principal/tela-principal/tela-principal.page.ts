@@ -14,7 +14,7 @@ export class TelaPrincipalPage implements OnInit {
   constructor(private service : CrudService) { }
 
   ngOnInit() {
-    this.service.getTasks().subscribe((res) =>{
+    this.service.getAdmin().subscribe((res) =>{
       this.Consultas = res.map((t) =>{
         return {
           id: t.payload.doc.id,
@@ -25,7 +25,7 @@ export class TelaPrincipalPage implements OnInit {
   }
 
   todoList() {
-    this.service.getTasks().subscribe((data) => {
+    this.service.getAdmin().subscribe((data) => {
       console.log(data)
     })
   }

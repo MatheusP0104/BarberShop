@@ -1,0 +1,310 @@
+.body{
+    --ion-background-color: #fff;
+    font-family: 'Inika';
+}
+
+.logo{
+    position: relative;
+    margin-top: 10px;
+    left: 7.3em;
+    width: 75px;
+    height: 75px;
+}
+
+.voltar{
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 85px;
+    height: 82px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line{
+    border: 1px solid #000;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.calendario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    border-radius: 30px;
+}
+
+ion-datetime{
+    width: 99vw;
+}
+
+.calendario .line{
+    margin-top: 10px;
+}
+
+.agendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.agendar ion-button{
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #000;
+    width: 80%;
+    font-family: 'Inika';
+    font-weight: 800;
+    margin-top: 40px; 
+}
+
+.agendar ion-button:hover{
+    color: #000;
+    transition: 0.5s ease;
+    background-color: #a8a8a8;
+}
+
+.Titonlo{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+  margin-left: 8%;
+}
+
+.title3{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.lobelid{
+ margin-left: 25%;
+
+}
+.agendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.agendar ion-button{
+    position: relative;
+    bottom: 20px;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #000;
+    font-family: 'Inika';
+    font-weight: 800; 
+}
+
+.boletin ion-button:hover{
+    color: #000;
+    transition: 0.5s ease;
+    background-color: #a8a8a8;
+}
+
+.title3 ion-input{
+    border: 1px solid #000;
+    border-radius:  10px;
+    width: 200px;
+    height: 100px;
+    margin-left: 25%;
+    margin-top: -30px;
+    margin-bottom: 30px;
+ 
+}
+
+.pagamento{
+    padding-left: 25px;
+}
+
+.pagamento h5{
+    font-weight: 600;
+}
+
+.pagamento ion-label{
+    display: flex;
+    flex-direction: column;
+
+    color: #000;
+    font-family: 'Inika';
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.logoBarber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+}
+
+.pix{
+    position: relative;
+    left: 90px;
+}
+
+.linhas{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.linhas .line{
+    border: solid 1px #000;
+    width: 85vw;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content h1{
+    font-weight: 600;
+}
+
+.content p{
+    font-weight: 600;
+    position: relative;
+    left: 30px;
+}
+
+.content h6{
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+}
+
+.content h5{
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+    width: 300px;
+    height: 30px;
+
+}
+
+.content .qrcode{
+    width: 150px;
+    height: 150px;
+}
+
+.content .finalizar{
+    position: absolute;
+    top: 73vh;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #000;
+    width: 80%;
+    font-family: 'Inika';
+    font-weight: 800;
+}
+
+.content .finalizar:hover{
+    color: #000;
+    transition: 0.5s ease;
+    background-color: #a8a8a8;
+}
+
+// ------------------------ Pagamento no local ----------------
+
+.valor{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.texto_valorTotal{
+    font-weight: 800;
+}
+
+.texto_real{
+    font-weight: 1000;
+}
+
+.troco{
+    display: flex;
+    justify-content: space-around;
+    align-items: row;
+
+    width: 100%;
+}
+
+.sem_troco{
+    color: #000;
+    font-family: 'Inika';
+}
+
+.check{
+    display: flex;
+    justify-content: start;
+    width: 100vw;
+
+}
+
+// ------------------------ Pagamento Finalizado ----------------
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    top: 80px;
+}
+
+.confirma{
+    position: relative;
+    width: 240px;
+    height: 234px;
+
+    top: 0px;
+
+    animation-name: expandir;
+    animation-duration: 2.5s;
+    animation-delay: 0.5;
+}
+
+.title_3{
+    position: absolute;
+    top: 42vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+
+.text{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+@keyframes expandir{
+    0%   {width:240px; height:234px;}
+    50%  {top:-30px;width:320px; height:320px;}
+    100%    {width:240px; height:234px;}
+}

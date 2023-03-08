@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button class="voltar" color="--ion-background-color:#323131;" routerLink="/tela-principal">
+      <img id="img_voltar" src="assets/imagens/voltar.png" alt="">
+    </ion-button>
+    <img class="logo" src="assets/imagens/logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body">
+  <ion-icon id="imagem-config" name="settings-outline"></ion-icon>
+  <div id="config">Configurações</div>
+
+  <div id="container">
+    <ion-item class="seguranca" lines="none" routerLink="#">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="auto"><ion-icon style="position:relative; height: 50px; top:20px;" id="imagem" name="shield-checkmark-outline"></ion-icon></ion-col>
+          <ion-col><div>Privacidade e Segurança</div></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item class="aparencia" lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="auto"><ion-icon id="imagem" name="color-palette-outline"></ion-icon></ion-col>
+          <ion-col><div>Aparência</div></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    
+    <ion-item class="Sistema" lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="auto"><ion-icon id="imagem" name="build-outline"></ion-icon></ion-col>
+          <ion-col><div>Sistema</div></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    
+    <ion-item class="Histórico" lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="auto"><ion-icon id="imagem" name="time-outline"></ion-icon></ion-col>
+          <ion-col><div>Histórico</div></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    
+  </div>
+  
+</ion-content>

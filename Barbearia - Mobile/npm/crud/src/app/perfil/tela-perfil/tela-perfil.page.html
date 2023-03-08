@@ -1,0 +1,112 @@
+<div *ngIf="!editMode">
+<ion-header>
+  <ion-toolbar>
+    <ion-button class="voltar" color="--ion-background-color:#323131;" routerLink="/tela-principal">
+      <img id="img_voltar" src="assets/imagens/voltar.png" alt="">
+    </ion-button>
+
+    <ion-button class="bt_add" (click)="edit()" color="--ion-background-color:#323131;">
+      <ion-icon class="icons" [name]="icone"></ion-icon>
+    </ion-button>
+ 
+
+  <ion-button class="bt_config" color="--ion-background-color:#323131;" routerLink="/config">
+    <ion-icon class="icons" name="settings-outline"></ion-icon>
+  </ion-button>
+  </ion-toolbar>
+</ion-header>
+</div>
+
+<ion-content class="body">
+  <div *ngIf="!editMode">
+    <img class="userP" src="assets/imagens/userPerfil.png" alt="Foto_Perfil">
+    <div class="circle">
+      <ion-icon class="camera" name="camera-outline"></ion-icon>
+    </div>
+
+    <!-- Nome --> 
+    <ion-item class="perfil" lines="none" *ngFor="let consulta of Consultas">
+      <ion-label class="titulo" position="floating">Nome: {{consulta.nome}} </ion-label>
+      <img src="assets/imagens/user.png" alt="">
+    </ion-item>
+
+    <!-- Email -->
+    <ion-item class="perfil" lines="none" *ngFor="let consulta of Consultas">
+      <ion-label class="titulo" position="floating">Email: {{consulta.email}}</ion-label>
+      <img src="assets/imagens/email.png" alt="">
+    </ion-item>
+
+  <!-- Senha -->
+    <ion-item class="perfil" lines="none" *ngFor="let consulta of Consultas">
+      <ion-label class="titulo" position="floating">Senha: {{consulta.senha}}</ion-label>
+      <img src="assets/imagens/senha.png" alt="">
+    </ion-item>
+    
+  <!-- Telefone -->
+    <ion-item class="perfil" lines="none" *ngFor="let consulta of Consultas">
+      <ion-label class="titulo" position="floating">Telefone: {{consulta.telefone}}</ion-label>
+      <img src="assets/imagens/telefone.png" alt="">
+    </ion-item>
+  </div>
+
+  <!-- Formulário -->
+
+  <div *ngIf="editMode">
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <ion-header>
+      <ion-toolbar>
+        <ion-button class="voltar" color="--ion-background-color:#323131;" routerLink="/tela-principal">
+          <img id="img_voltar" src="assets/imagens/voltar.png" alt="">
+        </ion-button>
+    
+        <ion-button class="bt_add" (click)="edit()" [type]="tipo" color="--ion-background-color:#323131;">
+          <ion-icon class="icons" [name]="icone"></ion-icon>
+        </ion-button>
+     
+    
+      <ion-button class="bt_config" color="--ion-background-color:#323131;" routerLink="/config">
+        <ion-icon class="icons" name="settings-outline"></ion-icon>
+      </ion-button>
+      </ion-toolbar>
+    </ion-header>
+    <img class="userP" src="assets/imagens/userPerfil.png" alt="Foto_Perfil">
+    <div class="circle">
+      <ion-icon class="camera" name="camera-outline"></ion-icon>
+    </div>
+
+    <!-- Nome --> 
+    <ion-item class="perfil" lines="none">
+      <ion-label class="titulo" position="floating">Nome:</ion-label>
+      <ion-input type="text" formControlName="nome"></ion-input>
+      <div class="lines"></div>
+      <img class="position" src="assets/imagens/user.png" alt="">
+    </ion-item>
+
+    <!-- Email -->
+    <ion-item class="perfil" lines="none">
+      <ion-label class="titulo" position="floating">Email:</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+      <div class="lines"></div>
+      <img class="position"  id="mail" src="assets/imagens/email.png" alt="">
+    </ion-item>
+
+  <!-- Senha -->
+    <ion-item class="perfil" lines="none">
+      <ion-label class="titulo" position="floating">Senha:</ion-label>
+      <ion-input type="password" formControlName="senha"></ion-input>
+      <div class="lines"></div>
+      <img class="position" src="assets/imagens/senha.png" alt="">
+    </ion-item>
+    
+  <!-- Telefone -->
+    <ion-item class="perfil" lines="none">
+      <ion-label class="titulo" position="floating">Telefone:</ion-label>
+      <ion-input formControlName="telefone" type="tel"></ion-input>
+      <div class="lines"></div>
+      <img class="position" src="assets/imagens/telefone.png" alt="">
+    </ion-item>
+  </form>
+  </div>
+
+
+</ion-content>

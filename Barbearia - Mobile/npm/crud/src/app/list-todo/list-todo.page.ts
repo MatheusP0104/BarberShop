@@ -19,7 +19,7 @@ export class ListTodoPage implements OnInit {
 
   // Lista na tela
   ngOnInit() {
-    this.service.getTasks().subscribe((res) => {
+    this.service.getAdmin().subscribe((res) => {
       this.Tasks = res.map((t) => {
         return {
           id: t.payload.doc.id,
@@ -30,7 +30,7 @@ export class ListTodoPage implements OnInit {
   }
 
   todoList() {
-    this.service.getTasks().subscribe((data) => {
+    this.service.getAdmin().subscribe((data) => {
       console.log(data)
     })
   }

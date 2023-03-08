@@ -1,0 +1,87 @@
+.body{
+    --ion-background-color: #fff;
+}
+
+.logo{
+    position: relative;
+    margin-top: 10px;
+    left: 8em;
+    width: 55px;
+    height: 55px;
+}
+
+.voltar{
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 85px;
+    height: 82px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.title img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.title ion-label{
+    font-size: 25px;
+    font-family: 'Inika';
+    font-weight: 600;
+}
+
+h3{
+    font-family: 'Inika';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+ion-item::part(native){
+    border-bottom: #000 2px solid;
+}
+
+.itens{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.field{
+    width: 100%;
+}
+
+.itens h5{
+    font-family: 'Inika';
+    font-weight: 600;
+}
+
+.itens ion-note{
+    font-family: 'Inika';
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.buttonAdd{
+    position: absolute;
+    width: 77px;
+    height: 33px;
+    left: 0.3rem;
+    top: 0.5rem;
+
+    color: #000;
+
+    border: 2px solid #000000;
+    border-radius: 30px;
+
+}

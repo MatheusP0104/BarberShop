@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button  mode="ios" class="voltar" color="--ion-background-color:#323131;" routerLink="/tela-principal">
+      <img id="img_voltar" src="assets/imagens/voltar.png" alt="">
+    </ion-button>
+    <img class="logo" src="assets/imagens/logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body" mode="ios">
+
+  <ion-button class="buttonAdd" (click)="enviarDados()" color="--ion-background-color:#323131;">Criar</ion-button>
+  
+  <!-- <div> começo da tela Depilação -->
+    <div class="title">
+      <img src="assets\imagens\depilacao.png" alt="">
+      <ion-label>Depilação</ion-label>
+    </div>
+    
+    <div class="itens">
+      <!-- Depilação c/ Cera -->
+    <ion-item mode="ios" button detail-icon="false" lines="full" class="field" routerLink="/tela-agenda">
+      <ion-label> 
+        <h3>Depilação c/ Cera</h3> 
+        <h5>Utiliza cera quente ou fria, <br> desde sua raiz.</h5>
+      </ion-label>
+      <ion-note slot="end">R$15</ion-note>
+      </ion-item>
+  
+      <!-- Depilação c/ Pinça -->
+      <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+        <ion-label> <h3>Depilação c/ Pinça</h3>
+           <h5>Utiliza a pinça, fio por fio.</h5> 
+        </ion-label>
+        <ion-note slot="end">R$10</ion-note>
+       </ion-item>
+  
+       <!-- Depilação c/ Lâmina -->
+       <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+        <ion-label> <h3>Depilação c/ Lâmina</h3>
+           <h5>Utiliza a lâmina, cortando <br> o pelo em sua base. </h5> 
+        </ion-label>
+        <ion-note slot="end">R$15</ion-note>
+       </ion-item>
+  
+       <!-- Depilação c/ Creme -->
+       <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+        <ion-label> <h3>Depilação c/ Creme</h3>
+           <h5>Utiliza o creme depilatório,<br> derretendo a haste  <br>  do pelo.</h5> 
+        </ion-label>
+        <ion-note slot="end">R$10</ion-note>
+       </ion-item>
+  
+       <!-- Depilação c/ Linha -->
+       <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+        <ion-label> <h3>Depilação c/ Linha </h3>
+           <h5>Utiliza a linha, arrancando<br> o pelo desde a raiz.</h5> 
+        </ion-label>
+        <ion-note slot="end">R$15</ion-note>
+       </ion-item>
+  

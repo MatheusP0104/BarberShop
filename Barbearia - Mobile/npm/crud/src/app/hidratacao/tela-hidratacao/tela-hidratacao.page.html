@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button mode="ios" class="voltar" color="--ion-background-color:#323131;" routerLink="/tela-principal">
+      <img id="img_voltar" src="assets/imagens/voltar.png" alt="">
+    </ion-button>
+    <img class="logo" src="assets/imagens/logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body" mode="ios">
+
+  <ion-button class="buttonAdd" (click)="enviarDados()" color="--ion-background-color:#323131;">Criar</ion-button>
+  
+  <!-- <div> começo da tela Hidratação -->
+    <div class="title">
+      <img src="assets\imagens\locao.png" alt="">
+      <ion-label>Hidratação</ion-label>
+    </div>
+    
+    <div class="itens">
+      <!-- Hidrat. Profunda -->
+    <ion-item mode="ios" button detail-icon="false" lines="full" class="field" routerLink="/tela-agenda">
+      <ion-label> 
+        <h3>Hidrat. Profunda</h3> 
+        <h5>Contém componentes que <br> potencializam o efeito <br>do tratamento.</h5>
+      </ion-label>
+      <ion-note slot="end">R$40</ion-note>
+      </ion-item>
+  
+      <!-- Hidrat. c/ Queratina -->
+      <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+        <ion-label> <h3>Hidrat. c/ Queratina</h3>
+           <h5>Potente para os fios, <br> um cabelo recuperado <br>de danos.</h5> 
+        </ion-label>
+        <ion-note slot="end">R$50</ion-note>
+       </ion-item>
+  
+       <!-- Hidrat. c/ Cauterização -->
+       <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+        <ion-label> <h3>Hidrat. c/ Cauterização</h3>
+           <h5>Reconstrói a fibra <br>  danificada e mantem <br> por mais tempo. </h5> 
+        </ion-label>
+        <ion-note slot="end">R$40</ion-note>
+       </ion-item>
+  
+       <!-- Hidrat. c/ Óleos -->
+       <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+        <ion-label> <h3>Hidrat. c/ Óleos</h3>
+           <h5>Traz mais brilho e<br> nutrição para o cabelo <br>  danificado.</h5> 
+        </ion-label>
+        <ion-note slot="end">R$40</ion-note>
+       </ion-item>
+  
+       <!-- Hidrat. c/ Silicone -->
+       <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+        <ion-label> <h3>Hidrat. c/ Silicone </h3>
+           <h5>Ação de proteção, <br> criando uma película <br>contra  danos.</h5> 
+        </ion-label>
+        <ion-note slot="end">R$60</ion-note>
+       </ion-item>
+  
+         <!-- Plástica de fios -->
+         <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+          <ion-label> <h3>Plástica de fios   </h3>
+             <h5>Regenera os cabelos<br> de dentro para fora.</h5> 
+          </ion-label>
+          <ion-note slot="end">R$70</ion-note>
+         </ion-item>

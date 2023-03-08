@@ -24,7 +24,7 @@ export class UpdateTodoPage implements OnInit {
     public formBuilder : FormBuilder
   ) { 
     this.id = this.activateRoute.snapshot.paramMap.get('id')
-    this.service.getTask(this.id).subscribe((data) => {
+    this.service.getIdServicos(this.id).subscribe((data) => {
       this.editForm = this.formBuilder.group({
         nome: [data['nome']],
         descricao: [data['descricao']],

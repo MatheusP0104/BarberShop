@@ -1,0 +1,83 @@
+.map{
+    margin-top: 2vh;
+    margin-left: 2vh;
+    
+    height: 50vh;
+    width: 90vw;
+}
+
+.logo{
+    position: relative;
+    margin-top: 10px;
+    left: 7.7rem;
+    width: 65px;
+    height: 65px;
+}
+
+.buttonEdit{
+    position: absolute;
+    width: 91px;
+    height: 36px;
+
+    left: 12.5rem;
+    top: 1rem;
+
+    color: #000;
+
+    border: 2px solid #000000;
+    border-radius: 30px;
+}
+
+.buttonRota{
+    position: absolute;
+    width: 91px;
+    height: 36px;
+
+    left: 10px;
+    top: 75vh;
+
+    color: #000;
+
+    border: 2px solid #000000;
+    border-radius: 30px;
+}
+
+
+.voltar{
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 85px;
+    height: 82px;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.test2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    flex-direction: column;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+ion-icon{
+    width: 70px;
+    height: 70px;
+}

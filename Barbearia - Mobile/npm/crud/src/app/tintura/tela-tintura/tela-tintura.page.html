@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button mode="ios" class="voltar" color="--ion-background-color:#323131;" routerLink="/tela-principal">
+      <img id="img_voltar" src="assets/imagens/voltar.png" alt="">
+    </ion-button>
+    <img class="logo" src="assets/imagens/logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body" mode="ios">
+
+  <ion-button class="buttonAdd" (click)="enviarDados()" color="--ion-background-color:#323131;">Criar</ion-button>
+ 
+<!-- <div> começo da tela Tintura -->
+  <div class="title">
+    <img src="assets\imagens\tintura.png" alt="">
+    <ion-label>Tintura</ion-label>
+  </div>
+  
+  <div class="itens">
+    <!-- Tintura Permanente -->
+  <ion-item  mode="ios"button detail-icon="false" lines="full" class="field" routerLink="/tela-agenda">
+    <ion-label> 
+      <h3>Tintura Permanente</h3> 
+      <h5>A base de amônia e oxidante, <br> durando de 40 <br> a 60 dias.</h5>
+    </ion-label>
+    <ion-note slot="end">R$20</ion-note>
+    </ion-item>
+
+    <!-- Tintura Temporária -->
+    <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+      <ion-label> <h3>Tintura Temporária</h3>
+         <h5>Livre de amõnia e oxidante, <br> durando 5 ou 6 lavagens.</h5> 
+      </ion-label>
+      <ion-note slot="end">R$20</ion-note>
+     </ion-item>
+
+     <!-- Tonalizante -->
+     <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+      <ion-label> <h3>Tonalizante</h3>
+         <h5>Escurece os fios <br> realçando a cor. </h5> 
+      </ion-label>
+      <ion-note slot="end">R$25</ion-note>
+     </ion-item>
+
+     <!-- Shampoo Colorante -->
+     <ion-item  mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+      <ion-label> <h3>Shampoo Colorante</h3>
+         <h5>Clareia cabelos virgens,<br> colore 40% brancos e  <br> brilho aos tingidos.</h5> 
+      </ion-label>
+      <ion-note slot="end">R$20</ion-note>
+     </ion-item>
+
+     <!-- Henna -->
+     <ion-item mode="ios" button class="field" detail-icon="false" routerLink="/tela-agenda">
+      <ion-label> <h3>Henna </h3> 
+         <h5>Deixa os fios avermelhados<br> ou marrons.</h5> 
+      </ion-label>
+      <ion-note slot="end">R$20</ion-note>
+     </ion-item>
+    </div>
+</ion-content>

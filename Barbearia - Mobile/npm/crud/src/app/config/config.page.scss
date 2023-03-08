@@ -1,0 +1,101 @@
+.body{
+    position: relative;
+    --ion-background-color: #fff;
+}
+
+.voltar{
+    position: relative;
+    top: -30px;
+    left: -10px;
+    width: 80px;
+    height: 3vh;
+}
+
+.logo{
+    position: relative;
+    margin-top: 10px;
+    left: 3rem;
+    width: 55px;
+    height: 55px;
+}
+
+#config{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 42px;
+    height: 50px;
+    width: 320px;
+    top: 80px;
+}
+
+#imagem-config{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 50px;
+    top: 20px;
+}
+
+#imagem{
+    width: 30px;
+    height: 30px;
+}
+
+#container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 42px;  
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    row-gap: 30px;
+    column-gap: 30px;
+
+    top: 70px;
+
+    height: 500px;
+    width: 320px;
+}
+
+#container div{
+    position: relative;
+    width: 200px;
+    left: 30px;
+}
+
+// .seguranca{
+
+// }
+
+// .aparencia{
+
+// }
+
+// .Sistema{
+
+// }
+
+// .Histórico{
+
+// }
+
+.linha{
+    height: 3px;
+    width: 320px;
+    background-color: #000000;
+}

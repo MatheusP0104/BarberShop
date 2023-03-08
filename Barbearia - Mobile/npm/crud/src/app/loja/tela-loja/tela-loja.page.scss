@@ -1,0 +1,287 @@
+.logo{
+    position: relative;
+    margin-top: 10px;
+    left: 7.7rem;
+    width: 65px;
+    height: 65px;
+}
+
+.voltar{
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 85px;
+    height: 82px;
+}
+
+.body{
+    --ion-background-color:#fff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.container img{
+    position: relative;
+    left: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+.container h3{
+    position: relative;
+    left: 5px;
+}
+
+.line{
+    border: 1px solid #000;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.line2{
+    border: 1px solid #000;
+    height: 200vh; 
+    margin-top: -1036px; 
+}
+
+.produtos-line1{
+    display: block;
+    position: relative;
+    left: -73px;
+    text-align: center;
+}
+
+.produtos-line2{
+    display: block;
+    position: relative;
+    top: -1360px;
+    left: 73px;
+    text-align: center;
+    
+}
+
+.produtos-line1 ion-button{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+    width: 110px;
+    height: 2rem;
+}
+
+.produtos-line1 .pomada{
+    width: 40px;
+    height: 90px;
+}   
+
+.produtos-line2 .serum{
+    width: 40px;
+    height: 90px;
+} 
+
+.produtos-line2 ion-button{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+    width: 110px;
+    height: 2rem;
+    
+}
+
+.produto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 15px;
+    flex-direction: row;
+}
+
+.produto h4{
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.produto p{
+    position: relative;
+    right: 68px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.quant{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.quant ion-icon{
+    margin-bottom: 25px;
+    color: #000;
+    width: 20px;
+    height: 20px;
+}
+
+.quant p{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.lines{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+}
+
+ .lines .line{
+    width: 90%;
+    border: #000 1px solid;
+
+}
+
+.envio{
+    padding-left: 25px;
+}
+
+.envio h5{
+    font-weight: 600;
+}
+
+.envio h6{
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.pac{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.pac ion-item{
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.sedex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.sedex ion-item{
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.lines2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lines2 .line2{
+    width: 90%;
+    border: #000 1px solid;
+
+}
+
+.pagamento{
+    padding-left: 25px;
+}
+
+.pagamento h5{
+    font-weight: 600;
+}
+
+.pagamento ion-item h6{
+    font-weight: 600;
+    font-family: 'Inika';
+}
+
+.lines3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lines3 .line3{
+    width: 90%;
+    border: #000 1px solid;
+
+}
+
+.detalhes-pagamento{
+    padding-left: 25px;
+}
+
+.detalhes-pagamento h5{
+    font-weight: 600;
+}
+
+.sub-total-prod{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    padding-left: 5px;
+}
+
+.sub-total-prod h6, p{
+    font-weight: 600;
+}
+
+.sub-total-frete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    padding-left: 5px;
+}
+
+.sub-total-frete h6, p{
+    font-weight: 600;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    padding-left: 5px;
+}
+
+.total h5, p{
+    font-weight: 600;
+}
+
+.finalizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+.finalizar ion-button{
+    color: #fff;
+    background-color: #323131;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: 'Inika';
+}
